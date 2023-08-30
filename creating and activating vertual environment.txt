@@ -24,6 +24,14 @@
 >>>### if you want to install all modules in a single click. Yesss you can do that toooo###
 >>>Open command prompt and run command $ pip install -r requirements.txt    thats it it will autometically install all the modules that are written in tha requirements.txt file above.
 				######## This so cool #######
+####--Another cool point is that we can even export our whole environment as an environment.yml file
+>>>open cmd and activate the environment
+>>>Then just type this $conda env export > environment.yml ##We have successfully exported our environment to a yml file
+>>>Now to create the environment that we have exported to any ware we just nee d to write
+>>> $conda env create -f environment.yml
+>>>That's it. We can directly use our whole environment any where by this process.
+>>>Even all the libraries will be installed autometically(pip libraries) ex: numpy, pandas etc.
+				####### This is super cool######
 
 
 
@@ -38,4 +46,6 @@
 >>>>To verify the gpu setup use command $python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
 ############ You are done and good to use the gpu for your conda vertual environment and for your projects###################
+
+
 
