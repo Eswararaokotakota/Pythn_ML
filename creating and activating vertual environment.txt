@@ -1,0 +1,41 @@
+##########  Here i have created a vertual environment for my python projects on machine learning
+#################To create a superate vertual environment #############################
+
+>>>First create a superate folder by any name (ex: i created eswar named folder in desktop)
+>>>now open the cmd in that path and then run this command  $python -m venv eswars_v_env    ##here eswars_v_env is my environment name you can write any name you wish
+>>>after running the above command you will find a folder will be created with the name you mentioned and some files and subfolders also being created
+>>>You have successfully created the vertual environment
+>>>Now, To activete that vertual environment use comand $eswars_v_env\Scripts\activate   (run it you will see the name of your vertual environment in tha cmd prompt before the path begins)
+>>>Done you can run your programs in your superate vertual environment
+
+>>>To de activate vertual environment use command $deactivate
+
+  ########################DONE.!#############################
+
+
+
+############## So now you have created your project with multiple libraries and if you want those libraries in this perticular environment in a single file it's very easy to get them ###################
+####-First activate the up command in the above mentioined-####
+>>>open command prompt in that project folder
+>>>now type command $pip freeze  ------This will gives(prints) you the libraries you have installed in this perticular environment
+>>>###If you want those libraries list in a txt file. even it is also very easy###
+>>>open cmd prompt and run command $pip freeze > requirements.txt
+>>>You have successfully got the list of libraries 
+>>>### if you want to install all modules in a single click. Yesss you can do that toooo###
+>>>Open command prompt and run command $ pip install -r requirements.txt    thats it it will autometically install all the modules that are written in tha requirements.txt file above.
+				######## This so cool #######
+
+
+
+    ########################Now lets create a CONDA ENVIRONMENT ##########################
+>>>> tO CREATE A CONDA VERTUAL ENVIRONMENT USE COMMAND $conda create --name eswar python=3.9  ##Successfully created conda environment
+>>>>To activate that environment use command $conda activate eswar (make sure it is activated for next processes down below)
+
+                  #######Now let's setup the gpu for tensorflow############
+>>>>use command to install cuda,cuDNN with conda use command $conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+>>>>let's upgrade pip now command $pip install --upgrade pip
+>>>>let's install tensorflow command $pip install "tensorflow<2.11" 
+>>>>To verify the gpu setup use command $python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+############ You are done and good to use the gpu for your conda vertual environment and for your projects###################
+
